@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.3.2 (Python 3.11.5 on win32)" generated="2025-11-01T14:11:14.520371" rpa="false" schemaversion="5">
+<suite id="s1" name="Radio CheckBox" source="D:\VenkatSai\Python_RobotFramework_Learn\robotLearn1\Automation_3\Radio_CheckBox.robot">
+<test id="s1-t1" name="RadioButton_CheckBox_TestCase" line="9">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2025-11-01T14:11:15.289299" level="INFO">Opening browser 'chrome' to base url 'https://testautomationpractice.blogspot.com/'.</msg>
+<arg>${url}</arg>
+<arg>${browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2025-11-01T14:11:15.289299" elapsed="8.198580"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2025-11-01T14:11:23.489899" elapsed="0.177049"/>
+</kw>
+<kw name="Set Selenium Speed" owner="SeleniumLibrary">
+<arg>2</arg>
+<doc>Sets the delay that is waited after each Selenium command.</doc>
+<status status="PASS" start="2025-11-01T14:11:23.666948" elapsed="0.000000"/>
+</kw>
+<kw name="Select Radio Button" owner="SeleniumLibrary">
+<msg time="2025-11-01T14:11:23.666948" level="INFO">Selecting 'male' from radio button 'gender'.</msg>
+<arg>gender</arg>
+<arg>male</arg>
+<doc>Sets the radio button group ``group_name`` to ``value``.</doc>
+<status status="PASS" start="2025-11-01T14:11:23.666948" elapsed="6.276069"/>
+</kw>
+<kw name="Select Radio Button" owner="SeleniumLibrary">
+<msg time="2025-11-01T14:11:29.944635" level="INFO">Selecting 'female' from radio button 'gender'.</msg>
+<arg>gender</arg>
+<arg>female</arg>
+<doc>Sets the radio button group ``group_name`` to ``value``.</doc>
+<status status="PASS" start="2025-11-01T14:11:29.944124" elapsed="6.339534"/>
+</kw>
+<kw name="Select Radio Button" owner="SeleniumLibrary">
+<msg time="2025-11-01T14:11:36.285670" level="INFO">Selecting 'male' from radio button 'gender'.</msg>
+<arg>gender</arg>
+<arg>male</arg>
+<doc>Sets the radio button group ``group_name`` to ``value``.</doc>
+<status status="PASS" start="2025-11-01T14:11:36.285670" elapsed="6.226552"/>
+</kw>
+<kw name="Select Checkbox" owner="SeleniumLibrary">
+<msg time="2025-11-01T14:11:42.514232" level="INFO">Selecting checkbox 'id:tuesday'.</msg>
+<arg>id:tuesday</arg>
+<doc>Selects the checkbox identified by ``locator``.</doc>
+<status status="PASS" start="2025-11-01T14:11:42.514232" elapsed="10.354334"/>
+</kw>
+<kw name="Select Checkbox" owner="SeleniumLibrary">
+<msg time="2025-11-01T14:11:52.870591" level="INFO">Selecting checkbox 'id:wednesday'.</msg>
+<arg>id:wednesday</arg>
+<doc>Selects the checkbox identified by ``locator``.</doc>
+<status status="PASS" start="2025-11-01T14:11:52.870591" elapsed="10.253076"/>
+</kw>
+<kw name="Unselect Checkbox" owner="SeleniumLibrary">
+<msg time="2025-11-01T14:12:03.125726" level="INFO">Unselecting checkbox 'id:tuesday'.</msg>
+<arg>id:tuesday</arg>
+<doc>Removes the selection of checkbox identified by ``locator``.</doc>
+<status status="PASS" start="2025-11-01T14:12:03.125726" elapsed="10.275559"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2025-11-01T14:12:13.403307" elapsed="4.293980"/>
+</kw>
+<status status="PASS" start="2025-11-01T14:11:15.289299" elapsed="62.409510"/>
+</test>
+<status status="PASS" start="2025-11-01T14:11:14.524407" elapsed="63.176069"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="Radio CheckBox" id="s1" pass="1" fail="0" skip="0">Radio CheckBox</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

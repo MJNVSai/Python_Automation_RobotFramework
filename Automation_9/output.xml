@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.3.2 (Python 3.11.5 on win32)" generated="2025-11-02T19:06:29.978906" rpa="false" schemaversion="5">
+<suite id="s1" name="Keyword Args" source="D:\VenkatSai\Python_RobotFramework_Learn\robotLearn1\Automation_9\Keyword_Args.robot">
+<test id="s1-t1" name="FlipkartSite" line="23">
+<kw name="launchingBrowser">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2025-11-02T19:06:30.251677" level="INFO">Opening browser 'chrome' to base url 'https://www.flipkart.com/'.</msg>
+<arg>${weburl}</arg>
+<arg>${webbrowser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2025-11-02T19:06:30.251677" elapsed="3.297003"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2025-11-02T19:06:33.550696" elapsed="0.092127"/>
+</kw>
+<kw name="Set Selenium Speed" owner="SeleniumLibrary">
+<arg>4</arg>
+<doc>Sets the delay that is waited after each Selenium command.</doc>
+<status status="PASS" start="2025-11-02T19:06:33.642823" elapsed="0.008829"/>
+</kw>
+<kw name="Get Title" owner="SeleniumLibrary">
+<msg time="2025-11-02T19:06:37.708545" level="INFO">${title} = Online Shopping Site for Mobiles, Electronics, Furniture, Grocery, Lifestyle, Books &amp; More. Best Offers!</msg>
+<var>${title}</var>
+<doc>Returns the title of the current page.</doc>
+<status status="PASS" start="2025-11-02T19:06:33.653304" elapsed="4.055241"/>
+</kw>
+<return>
+<value>${title}</value>
+<status status="PASS" start="2025-11-02T19:06:37.708545" elapsed="0.000000"/>
+</return>
+<msg time="2025-11-02T19:06:37.709566" level="INFO">${SiteTitle} = Online Shopping Site for Mobiles, Electronics, Furniture, Grocery, Lifestyle, Books &amp; More. Best Offers!</msg>
+<var>${SiteTitle}</var>
+<arg>${url2}</arg>
+<arg>${browser}</arg>
+<status status="PASS" start="2025-11-02T19:06:30.249930" elapsed="7.459636"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>Website page Title : ${SiteTitle}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-11-02T19:06:37.709566" elapsed="0.003686"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2025-11-02T19:06:37.713252" level="INFO">Website page Title in Log Report : Online Shopping Site for Mobiles, Electronics, Furniture, Grocery, Lifestyle, Books &amp; More. Best Offers!</msg>
+<arg>Website page Title in Log Report : ${SiteTitle}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2025-11-02T19:06:37.713252" elapsed="0.000000"/>
+</kw>
+<kw name="SelectMobileSection">
+<kw name="Click Link" owner="SeleniumLibrary">
+<msg time="2025-11-02T19:06:37.719554" level="INFO">Clicking link 'xpath://*[@id="container"]/div/div[1]/div/div/div/div/div/div/div/div/div/div[2]/div[1]/div/div[1]/div/div/div/div/div[1]/a[2]'.</msg>
+<arg>xpath://*[@id="container"]/div/div[1]/div/div/div/div/div/div/div/div/div/div[2]/div[1]/div/div[1]/div/div/div/div/div[1]/a[2]</arg>
+<doc>Clicks a link identified by ``locator``.</doc>
+<status status="PASS" start="2025-11-02T19:06:37.715283" elapsed="13.159569"/>
+</kw>
+<kw name="Close All Browsers" owner="SeleniumLibrary">
+<doc>Closes all open browsers and resets the browser cache.</doc>
+<status status="PASS" start="2025-11-02T19:06:50.874852" elapsed="6.342593"/>
+</kw>
+<status status="PASS" start="2025-11-02T19:06:37.715283" elapsed="19.502162"/>
+</kw>
+<status status="PASS" start="2025-11-02T19:06:30.249930" elapsed="26.969540"/>
+</test>
+<status status="PASS" start="2025-11-02T19:06:29.982669" elapsed="27.236801"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="Keyword Args" id="s1" pass="1" fail="0" skip="0">Keyword Args</stat>
+</suite>
+</statistics>
+<errors>
+<msg time="2025-11-02T19:06:29.965033" level="WARN">Error in file 'D:\VenkatSai\Python_RobotFramework_Learn\robotLearn1\Automation_9\Keyword_Args.robot' on line 16: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+</errors>
+</robot>

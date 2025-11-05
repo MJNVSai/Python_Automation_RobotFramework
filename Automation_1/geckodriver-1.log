@@ -1,0 +1,21 @@
+1761829398071	geckodriver	INFO	Listening on 127.0.0.1:64771
+1761829401204	mozrunner::runner	INFO	Running command: "C:\\Users\\saido\\.cache\\selenium\\firefox\\win64\\144.0.2\\firefox.exe" "--marionette" "--remote-debuggin ... 2" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\saido\\AppData\\Local\\Temp\\rust_mozprofileg1PtoE"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+Dynamically enable window occlusion 0
+1761829402394	Marionette	INFO	Marionette enabled
+1761829402481	Marionette	INFO	Listening on port 54657
+WebDriver BiDi listening on ws://127.0.0.1:64772
+Read port: 54657
+1761829402596	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://static.cdninstagram.com/rsrc.php/v4idt94/yJ/l/en_US/Xpg5jY_NM3zuwtJkq_xz1c1GFOQFM0jDiB04vu_NedGlpFCDMFHGm5l0UKNjSPBa37Rg2ccx3CrnYP5n362_vk0g5PC91097DzWOg5eSXdbPnbvP9BOTDEw1oViBsqEew9KuxnWhQ9xtyFD2XdE8-erz3ec_s8iuwPqFfTd8nNhq9J9V1MuqxduP5m5ExG5bVbYJLOCzWPY5BaXH-VkrsHWAbn7-clbhjVUYGrJfc4uSy1cr57.js, line 222: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+1761829416792	Marionette	INFO	Stopped listening on port 54657
+Dynamically enable window occlusion 1
+console.error: (new TypeError("NetworkError when attempting to fetch resource.", ""))
+console.error: (new Error("OHTTP was configured for https://ads.mozilla.org/v1/delete_user but we couldn't fetch a valid config", "moz-src:///browser/modules/ContextId.sys.mjs", 234))
+JavaScript error: resource://gre/modules/ObliviousHTTP.sys.mjs, line 117: NS_ERROR_XPC_CANT_CONVERT_PRIMITIVE_TO_ARRAY: Cannot convert primitive JavaScript value into an array arg 2 [nsIObliviousHttpService.newChannel]
+console.error: "Failed to fetch https://spocs.getpocket.com/user:" "NetworkError when attempting to fetch resource."
+console.warn: TopSitesFeed: Failed to fetch data from MARS server: NetworkError when attempting to fetch resource.
+console.error: services.settings: 
+  Message: AbortError: IndexedDB: main/newtab-wallpapers-v2 getLastModified() IndexedDB:  execute() A request was aborted, for example through a call to IDBTransaction.abort.
+JavaScript error: resource://services-settings/RemoteSettingsClient.sys.mjs, line 85: Error: Unknown callback

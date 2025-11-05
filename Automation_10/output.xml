@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.3.2 (Python 3.11.5 on win32)" generated="2025-11-03T18:00:16.319716" rpa="false" schemaversion="5">
+<suite id="s1" name="Extract Table Data" source="D:\VenkatSai\Python_RobotFramework_Learn\robotLearn1\Automation_10\Extract_Table_Data.robot">
+<test id="s1-t1" name="tableValidation" line="9">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2025-11-03T18:00:16.484300" level="INFO">Opening browser 'chrome' to base url 'https://testautomationpractice.blogspot.com/'.</msg>
+<arg>${url}</arg>
+<arg>${browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2025-11-03T18:00:16.484300" elapsed="2.721851"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2025-11-03T18:00:19.206151" elapsed="4.216932"/>
+</kw>
+<kw name="Set Selenium Speed" owner="SeleniumLibrary">
+<arg>3</arg>
+<doc>Sets the delay that is waited after each Selenium command.</doc>
+<status status="PASS" start="2025-11-03T18:00:23.423083" elapsed="0.000000"/>
+</kw>
+<kw name="Get Element Count" owner="SeleniumLibrary">
+<msg time="2025-11-03T18:00:26.450886" level="INFO">${rows} = 4</msg>
+<var>${rows}</var>
+<arg>xpath://*[@id="taskTable"]/tbody/tr</arg>
+<doc>Returns the number of elements matching ``locator``.</doc>
+<status status="PASS" start="2025-11-03T18:00:23.423083" elapsed="3.027803"/>
+</kw>
+<kw name="Get Element Count" owner="SeleniumLibrary">
+<msg time="2025-11-03T18:00:29.469756" level="INFO">${columns} = 5</msg>
+<var>${columns}</var>
+<arg>xpath://*[@id="headers"]/th</arg>
+<doc>Returns the number of elements matching ``locator``.</doc>
+<status status="PASS" start="2025-11-03T18:00:26.450886" elapsed="3.018870"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>No.of Rows in a Table : ${rows}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-11-03T18:00:29.469756" elapsed="0.000000"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>No.of Columns in a Table : ${columns}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-11-03T18:00:29.469756" elapsed="0.000000"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2025-11-03T18:00:29.469756" level="INFO">No.of Rows in a Table : 4</msg>
+<arg>No.of Rows in a Table : ${rows}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2025-11-03T18:00:29.469756" elapsed="0.000000"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2025-11-03T18:00:29.469756" level="INFO">No.of Columns in a Table : 5</msg>
+<arg>No.of Columns in a Table : ${columns}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2025-11-03T18:00:29.469756" elapsed="0.000000"/>
+</kw>
+<kw name="Get Text" owner="SeleniumLibrary">
+<msg time="2025-11-03T18:00:35.508297" level="INFO">${data} = 0.59 MB/s</msg>
+<var>${data}</var>
+<arg>xpath://*[@id="rows"]/tr[4]/td[3]</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-11-03T18:00:29.469756" elapsed="6.038541"/>
+</kw>
+<kw name="Get Text" owner="SeleniumLibrary">
+<msg time="2025-11-03T18:00:41.613307" level="INFO">${data2} = System</msg>
+<var>${data2}</var>
+<arg>xpath://*[@id="rows"]/tr[4]/td[1]</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-11-03T18:00:35.510341" elapsed="6.102966"/>
+</kw>
+<kw name="Get Text" owner="SeleniumLibrary">
+<msg time="2025-11-03T18:00:47.693322" level="INFO">${data3} = Disk (MB/s)</msg>
+<var>${data3}</var>
+<arg>xpath://*[@id="headers"]/th[3]</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-11-03T18:00:41.615347" elapsed="6.077975"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${data3} of ${data2} : ${data}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-11-03T18:00:47.695341" elapsed="0.002025"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2025-11-03T18:00:47.697366" level="INFO">Disk (MB/s) of System : 0.59 MB/s</msg>
+<arg>${data3} of ${data2} : ${data}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2025-11-03T18:00:47.697366" elapsed="0.000000"/>
+</kw>
+<status status="PASS" start="2025-11-03T18:00:16.484300" elapsed="31.213066"/>
+</test>
+<test id="s1-t2" name="TableDataCheck" line="29">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2025-11-03T18:00:47.738369" level="INFO">Opening browser 'chrome' to base url 'https://testautomationpractice.blogspot.com/'.</msg>
+<arg>${url}</arg>
+<arg>${browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2025-11-03T18:00:47.738369" elapsed="5.551628"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2025-11-03T18:00:53.292035" elapsed="3.095687"/>
+</kw>
+<kw name="Set Selenium Speed" owner="SeleniumLibrary">
+<arg>2</arg>
+<doc>Sets the delay that is waited after each Selenium command.</doc>
+<status status="PASS" start="2025-11-03T18:00:56.389760" elapsed="0.002024"/>
+</kw>
+<kw name="Table Column Should Contain" owner="SeleniumLibrary">
+<arg>xpath://*[@id="HTML1"]/div[1]/table</arg>
+<arg>2</arg>
+<arg>Author</arg>
+<doc>Verifies table column contains text ``expected``.</doc>
+<status status="PASS" start="2025-11-03T18:00:56.391784" elapsed="8.162456"/>
+</kw>
+<kw name="Table Row Should Contain" owner="SeleniumLibrary">
+<arg>xpath://*[@id="HTML1"]/div[1]/table</arg>
+<arg>6</arg>
+<arg>2000</arg>
+<doc>Verifies that table row contains text ``expected``.</doc>
+<status status="PASS" start="2025-11-03T18:01:04.554240" elapsed="8.128269"/>
+</kw>
+<kw name="Table Cell Should Contain" owner="SeleniumLibrary">
+<msg time="2025-11-03T18:01:24.882964" level="INFO">Table cell contains 'Mukesh'.</msg>
+<arg>xpath://*[@id="HTML1"]/div[1]/table</arg>
+<arg>3</arg>
+<arg>2</arg>
+<arg>Mukesh</arg>
+<doc>Verifies table cell contains text ``expected``.</doc>
+<status status="PASS" start="2025-11-03T18:01:12.682509" elapsed="12.200455"/>
+</kw>
+<kw name="Close All Browsers" owner="SeleniumLibrary">
+<doc>Closes all open browsers and resets the browser cache.</doc>
+<status status="PASS" start="2025-11-03T18:01:24.888745" elapsed="9.319365"/>
+</kw>
+<status status="PASS" start="2025-11-03T18:00:47.736355" elapsed="46.474291"/>
+</test>
+<status status="PASS" start="2025-11-03T18:00:16.319716" elapsed="77.892949"/>
+</suite>
+<statistics>
+<total>
+<stat pass="2" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="Extract Table Data" id="s1" pass="2" fail="0" skip="0">Extract Table Data</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

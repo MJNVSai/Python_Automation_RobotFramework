@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.3.2 (Python 3.11.5 on win32)" generated="2025-11-01T15:08:05.515340" rpa="false" schemaversion="5">
+<suite id="s1" name="Wait Timeout" source="D:\VenkatSai\Python_RobotFramework_Learn\robotLearn1\Automation_5\wait_timeout.robot">
+<test id="s1-t1" name="SpeedTest_Case" line="9">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2025-11-01T15:08:05.677760" level="INFO">Opening browser 'chrome' to base url 'https://testautomationpractice.blogspot.com/'.</msg>
+<arg>${url}</arg>
+<arg>${browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2025-11-01T15:08:05.677760" elapsed="4.681527"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2025-11-01T15:08:10.359287" elapsed="0.021315"/>
+</kw>
+<kw name="Get Selenium Speed" owner="SeleniumLibrary">
+<msg time="2025-11-01T15:08:10.380602" level="INFO">${speed} = 0 seconds</msg>
+<var>${speed}</var>
+<doc>Gets the delay that is waited after each Selenium command.</doc>
+<status status="PASS" start="2025-11-01T15:08:10.380602" elapsed="0.000000"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>Initial Speed : ${speed}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-11-01T15:08:10.380602" elapsed="0.000000"/>
+</kw>
+<kw name="Set Selenium Speed" owner="SeleniumLibrary">
+<arg>3</arg>
+<doc>Sets the delay that is waited after each Selenium command.</doc>
+<status status="PASS" start="2025-11-01T15:08:10.380602" elapsed="0.000000"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-11-01T15:08:10.380602" level="INFO">Typing text 'mjnvsai' into text field 'id:name'.</msg>
+<arg>id:name</arg>
+<arg>mjnvsai</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-11-01T15:08:10.380602" elapsed="9.150744"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-11-01T15:08:19.531346" level="INFO">Typing text 'mj@gmail.com' into text field 'id:email'.</msg>
+<arg>id:email</arg>
+<arg>mj@gmail.com</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-11-01T15:08:19.531346" elapsed="9.099027"/>
+</kw>
+<kw name="Select Radio Button" owner="SeleniumLibrary">
+<msg time="2025-11-01T15:08:28.631845" level="INFO">Selecting 'male' from radio button 'gender'.</msg>
+<arg>gender</arg>
+<arg>male</arg>
+<doc>Sets the radio button group ``group_name`` to ``value``.</doc>
+<status status="PASS" start="2025-11-01T15:08:28.631845" elapsed="9.081234"/>
+</kw>
+<kw name="Get Selenium Speed" owner="SeleniumLibrary">
+<msg time="2025-11-01T15:08:37.715103" level="INFO">${speed} = 3 seconds</msg>
+<var>${speed}</var>
+<doc>Gets the delay that is waited after each Selenium command.</doc>
+<status status="PASS" start="2025-11-01T15:08:37.713079" elapsed="0.002024"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>Final Speed : ${speed}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-11-01T15:08:37.715103" elapsed="0.000000"/>
+</kw>
+<status status="PASS" start="2025-11-01T15:08:05.677760" elapsed="32.040451"/>
+</test>
+<test id="s1-t2" name="TimeOut_TestCase" line="24">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2025-11-01T15:08:37.729663" level="INFO">Opening browser 'chrome' to base url 'https://testautomationpractice.blogspot.com/'.</msg>
+<arg>${url}</arg>
+<arg>${browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2025-11-01T15:08:37.729663" elapsed="8.317760"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2025-11-01T15:08:46.050988" elapsed="3.037967"/>
+</kw>
+<kw name="Set Selenium Timeout" owner="SeleniumLibrary">
+<arg>10</arg>
+<doc>Sets the timeout that is used by various keywords.</doc>
+<status status="PASS" start="2025-11-01T15:08:49.088955" elapsed="6.004902"/>
+</kw>
+<kw name="Wait Until Page Contains" owner="SeleniumLibrary">
+<msg time="2025-11-01T15:09:11.175006" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-1.png"&gt;&lt;img src="selenium-screenshot-1.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2025-11-01T15:09:11.175006" level="FAIL">Text 'Cypress45' did not appear in 10 seconds.</msg>
+<arg>Cypress45</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="FAIL" start="2025-11-01T15:08:55.094522" elapsed="16.080484">Text 'Cypress45' did not appear in 10 seconds.</status>
+</kw>
+<status status="FAIL" start="2025-11-01T15:08:37.729663" elapsed="33.445343">Text 'Cypress45' did not appear in 10 seconds.</status>
+</test>
+<test id="s1-t3" name="Implicit_Wait_TestCase" line="34">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2025-11-01T15:09:11.175006" level="INFO">Opening browser 'chrome' to base url 'https://testautomationpractice.blogspot.com/'.</msg>
+<arg>${url}</arg>
+<arg>${browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2025-11-01T15:09:11.175006" elapsed="7.897237"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2025-11-01T15:09:19.075288" elapsed="3.044941"/>
+</kw>
+<kw name="Set Selenium Implicit Wait" owner="SeleniumLibrary">
+<arg>10</arg>
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<status status="PASS" start="2025-11-01T15:09:22.120229" elapsed="9.009615"/>
+</kw>
+<kw name="Get Selenium Implicit Wait" owner="SeleniumLibrary">
+<msg time="2025-11-01T15:09:31.130855" level="INFO">${wait} = 10 seconds</msg>
+<var>${wait}</var>
+<doc>Gets the implicit wait value used by Selenium.</doc>
+<status status="PASS" start="2025-11-01T15:09:31.129844" elapsed="0.001011"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>Implicit Wait value : ${wait}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-11-01T15:09:31.130855" elapsed="0.000000"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-11-01T15:09:31.130855" level="INFO">Typing text 'mjnvsai' into text field 'id:name23'.</msg>
+<msg time="2025-11-01T15:09:47.370470" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-2.png"&gt;&lt;img src="selenium-screenshot-2.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2025-11-01T15:09:47.370470" level="FAIL">Element with locator 'id:name23' not found.</msg>
+<arg>id:name23</arg>
+<arg>mjnvsai</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="FAIL" start="2025-11-01T15:09:31.130855" elapsed="16.239615">Element with locator 'id:name23' not found.</status>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<arg>id:email</arg>
+<arg>mj@gmail.com</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" start="2025-11-01T15:09:47.370470" elapsed="0.000000"/>
+</kw>
+<kw name="Select Radio Button" owner="SeleniumLibrary">
+<arg>gender</arg>
+<arg>male</arg>
+<doc>Sets the radio button group ``group_name`` to ``value``.</doc>
+<status status="NOT RUN" start="2025-11-01T15:09:47.370470" elapsed="0.000000"/>
+</kw>
+<kw name="Close All Browsers" owner="SeleniumLibrary">
+<doc>Closes all open browsers and resets the browser cache.</doc>
+<status status="NOT RUN" start="2025-11-01T15:09:47.370470" elapsed="0.000000"/>
+</kw>
+<status status="FAIL" start="2025-11-01T15:09:11.175006" elapsed="36.195464">Element with locator 'id:name23' not found.</status>
+</test>
+<status status="FAIL" start="2025-11-01T15:08:05.516340" elapsed="101.854130"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="2" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="Wait Timeout" id="s1" pass="1" fail="2" skip="0">Wait Timeout</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

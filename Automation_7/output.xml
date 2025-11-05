@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.3.2 (Python 3.11.5 on win32)" generated="2025-11-01T16:30:50.256836" rpa="false" schemaversion="5">
+<suite id="s1" name="BrowCommands Pics" source="D:\VenkatSai\Python_RobotFramework_Learn\robotLearn1\Automation_7\BrowCommands_Pics.robot">
+<test id="s1-t1" name="BrowserCommands_TestCase" line="30">
+<kw name="BrowserCommands">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2025-11-01T16:30:50.429879" level="INFO">Opening browser 'chrome' to base url 'https://testautomationpractice.blogspot.com/'.</msg>
+<msg time="2025-11-01T16:30:56.141460" level="WARN">Error sending stats to Plausible: error sending request for url (https://plausible.io/api/event)</msg>
+<arg>${url}</arg>
+<arg>${browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2025-11-01T16:30:50.429879" elapsed="11.990299"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2025-11-01T16:31:02.420178" elapsed="0.071698"/>
+</kw>
+<kw name="Set Selenium Speed" owner="SeleniumLibrary">
+<arg>3</arg>
+<doc>Sets the delay that is waited after each Selenium command.</doc>
+<status status="PASS" start="2025-11-01T16:31:02.491876" elapsed="0.000000"/>
+</kw>
+<kw name="Go To" owner="SeleniumLibrary">
+<msg time="2025-11-01T16:31:02.496206" level="INFO">Opening url 'https://tcs.com'</msg>
+<arg>${url2}</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<status status="PASS" start="2025-11-01T16:31:02.496206" elapsed="4.122512"/>
+</kw>
+<kw name="Go Back" owner="SeleniumLibrary">
+<doc>Simulates the user clicking the back button on their browser.</doc>
+<status status="PASS" start="2025-11-01T16:31:06.618718" elapsed="3.048242"/>
+</kw>
+<status status="PASS" start="2025-11-01T16:30:50.429879" elapsed="19.237081"/>
+</kw>
+<status status="PASS" start="2025-11-01T16:30:50.429879" elapsed="19.237081"/>
+</test>
+<test id="s1-t2" name="ScreenShot_TestCase" line="33">
+<kw name="GetScreenshot">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2025-11-01T16:31:09.671007" level="INFO">Opening browser 'chrome' to base url 'https://testautomationpractice.blogspot.com/'.</msg>
+<arg>${url}</arg>
+<arg>${browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2025-11-01T16:31:09.668984" elapsed="8.195302"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2025-11-01T16:31:17.864286" elapsed="3.091773"/>
+</kw>
+<kw name="Set Selenium Speed" owner="SeleniumLibrary">
+<arg>3</arg>
+<doc>Sets the delay that is waited after each Selenium command.</doc>
+<status status="PASS" start="2025-11-01T16:31:20.956059" elapsed="0.000000"/>
+</kw>
+<kw name="Capture Element Screenshot" owner="SeleniumLibrary">
+<msg time="2025-11-01T16:31:27.309426" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="DatePicker_Element.png"&gt;&lt;img src="DatePicker_Element.png" width="400px"&gt;&lt;/a&gt;</msg>
+<arg>class:date-picker-box</arg>
+<arg>DatePicker_Element.png</arg>
+<doc>Captures a screenshot from the element identified by ``locator`` and embeds it into log file.</doc>
+<status status="PASS" start="2025-11-01T16:31:20.959079" elapsed="6.350347"/>
+</kw>
+<kw name="Capture Page Screenshot" owner="SeleniumLibrary">
+<msg time="2025-11-01T16:31:30.439333" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="WebsitePageShot_1.png"&gt;&lt;img src="WebsitePageShot_1.png" width="800px"&gt;&lt;/a&gt;</msg>
+<arg>WebsitePageShot_1.png</arg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<status status="PASS" start="2025-11-01T16:31:27.309426" elapsed="3.129907"/>
+</kw>
+<kw name="Close All Browsers" owner="SeleniumLibrary">
+<doc>Closes all open browsers and resets the browser cache.</doc>
+<status status="PASS" start="2025-11-01T16:31:30.443367" elapsed="12.339580"/>
+</kw>
+<status status="PASS" start="2025-11-01T16:31:09.668984" elapsed="33.113963"/>
+</kw>
+<status status="PASS" start="2025-11-01T16:31:09.668984" elapsed="33.115984"/>
+</test>
+<status status="PASS" start="2025-11-01T16:30:50.258640" elapsed="52.526328"/>
+</suite>
+<statistics>
+<total>
+<stat pass="2" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="BrowCommands Pics" id="s1" pass="2" fail="0" skip="0">BrowCommands Pics</stat>
+</suite>
+</statistics>
+<errors>
+<msg time="2025-11-01T16:30:56.141460" level="WARN">Error sending stats to Plausible: error sending request for url (https://plausible.io/api/event)</msg>
+</errors>
+</robot>

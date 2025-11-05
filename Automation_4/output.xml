@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.3.2 (Python 3.11.5 on win32)" generated="2025-11-01T14:30:40.300731" rpa="false" schemaversion="5">
+<suite id="s1" name="DropDown ListBox" source="D:\VenkatSai\Python_RobotFramework_Learn\robotLearn1\Automation_4\DropDown_ListBox.robot">
+<test id="s1-t1" name="Dropdown_TestCase" line="42">
+<kw name="TestingDropDownMenu">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2025-11-01T14:30:40.452357" level="INFO">Opening browser 'chrome' to base url 'https://testautomationpractice.blogspot.com/'.</msg>
+<arg>${url}</arg>
+<arg>${browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2025-11-01T14:30:40.452357" elapsed="4.197088"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2025-11-01T14:30:44.651012" elapsed="0.032870"/>
+</kw>
+<kw name="Set Selenium Speed" owner="SeleniumLibrary">
+<arg>5</arg>
+<doc>Sets the delay that is waited after each Selenium command.</doc>
+<status status="PASS" start="2025-11-01T14:30:44.683882" elapsed="0.000000"/>
+</kw>
+<kw name="Select From List By Label" owner="SeleniumLibrary">
+<msg time="2025-11-01T14:30:44.683882" level="INFO">Selecting options from selection list 'id:country' by label France.</msg>
+<arg>id:country</arg>
+<arg>France</arg>
+<doc>Selects options from selection list ``locator`` by ``labels``.</doc>
+<status status="PASS" start="2025-11-01T14:30:44.683882" elapsed="55.213287"/>
+</kw>
+<kw name="Select From List By Index" owner="SeleniumLibrary">
+<msg time="2025-11-01T14:31:39.897169" level="INFO">Selecting options from selection list 'id:country' by index 6.</msg>
+<arg>id:country</arg>
+<arg>6</arg>
+<doc>Selects options from selection list ``locator`` by ``indexes``.</doc>
+<status status="PASS" start="2025-11-01T14:31:39.897169" elapsed="75.233739"/>
+</kw>
+<kw name="Select From List By Value" owner="SeleniumLibrary">
+<msg time="2025-11-01T14:32:55.130908" level="INFO">Selecting options from selection list 'id:country' by value india.</msg>
+<arg>id:country</arg>
+<arg>india</arg>
+<doc>Selects options from selection list ``locator`` by ``values``.</doc>
+<status status="PASS" start="2025-11-01T14:32:55.130908" elapsed="40.138803"/>
+</kw>
+<kw name="Close All Browsers" owner="SeleniumLibrary">
+<doc>Closes all open browsers and resets the browser cache.</doc>
+<status status="PASS" start="2025-11-01T14:33:35.269711" elapsed="7.108804"/>
+</kw>
+<status status="PASS" start="2025-11-01T14:30:40.452357" elapsed="181.926158"/>
+</kw>
+<status status="PASS" start="2025-11-01T14:30:40.452357" elapsed="181.926158"/>
+</test>
+<test id="s1-t2" name="ListBox_TestCase" line="45">
+<kw name="TestingListBox">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2025-11-01T14:33:42.378515" level="INFO">Opening browser 'chrome' to base url 'https://testautomationpractice.blogspot.com/'.</msg>
+<arg>${url}</arg>
+<arg>${browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2025-11-01T14:33:42.378515" elapsed="9.635434"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2025-11-01T14:33:52.013949" elapsed="5.040623"/>
+</kw>
+<kw name="Set Selenium Speed" owner="SeleniumLibrary">
+<arg>5</arg>
+<doc>Sets the delay that is waited after each Selenium command.</doc>
+<status status="PASS" start="2025-11-01T14:33:57.054572" elapsed="0.000635"/>
+</kw>
+<kw name="Select From List By Label" owner="SeleniumLibrary">
+<msg time="2025-11-01T14:33:57.055207" level="INFO">Selecting options from selection list 'id:colors' by label Red.</msg>
+<arg>id:colors</arg>
+<arg>Red</arg>
+<doc>Selects options from selection list ``locator`` by ``labels``.</doc>
+<status status="PASS" start="2025-11-01T14:33:57.055207" elapsed="85.254005"/>
+</kw>
+<kw name="Select From List By Index" owner="SeleniumLibrary">
+<msg time="2025-11-01T14:35:22.310420" level="INFO">Selecting options from selection list 'id:colors' by index 4.</msg>
+<arg>id:colors</arg>
+<arg>4</arg>
+<doc>Selects options from selection list ``locator`` by ``indexes``.</doc>
+<status status="PASS" start="2025-11-01T14:35:22.309212" elapsed="55.161760"/>
+</kw>
+<kw name="Select From List By Value" owner="SeleniumLibrary">
+<msg time="2025-11-01T14:36:17.470972" level="INFO">Selecting options from selection list 'id:colors' by value yellow.</msg>
+<arg>id:colors</arg>
+<arg>yellow</arg>
+<doc>Selects options from selection list ``locator`` by ``values``.</doc>
+<status status="PASS" start="2025-11-01T14:36:17.470972" elapsed="40.124443"/>
+</kw>
+<kw name="Close All Browsers" owner="SeleniumLibrary">
+<doc>Closes all open browsers and resets the browser cache.</doc>
+<status status="PASS" start="2025-11-01T14:36:57.595415" elapsed="7.147614"/>
+</kw>
+<status status="PASS" start="2025-11-01T14:33:42.378515" elapsed="202.364514"/>
+</kw>
+<status status="PASS" start="2025-11-01T14:33:42.378515" elapsed="202.366753"/>
+</test>
+<status status="PASS" start="2025-11-01T14:30:40.302608" elapsed="384.442660"/>
+</suite>
+<statistics>
+<total>
+<stat pass="2" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="DropDown ListBox" id="s1" pass="2" fail="0" skip="0">DropDown ListBox</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

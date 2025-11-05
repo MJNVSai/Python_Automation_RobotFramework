@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.3.2 (Python 3.11.5 on win32)" generated="2025-10-30T20:37:57.922517" rpa="false" schemaversion="5">
+<suite id="s1" name="InputHandle" source="D:\VenkatSai\Python_RobotFramework_Learn\robotLearn1\Automation_2\InputHandle.robot">
+<test id="s1-t1" name="InputBox_TestCase" line="11">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2025-10-30T20:37:58.078465" level="INFO">Opening browser 'chrome' to base url 'https://google.com/'.</msg>
+<arg>${url}</arg>
+<arg>${browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2025-10-30T20:37:58.078465" elapsed="2.214999"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2025-10-30T20:38:00.293464" elapsed="0.028849"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-10-30T20:38:02.324211" level="INFO">Slept 2 seconds.</msg>
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-10-30T20:38:00.322313" elapsed="2.001898"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-10-30T20:38:02.324211" level="INFO">Typing text 'Amazon' into text field 'xpath:/html/body/div[2]/div[4]/form/div[1]/div[1]/div[1]/div[1]/div[2]/textarea'.</msg>
+<arg>xpath:/html/body/div[2]/div[4]/form/div[1]/div[1]/div[1]/div[1]/div[2]/textarea</arg>
+<arg>Amazon</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-10-30T20:38:02.324211" elapsed="0.102306"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-10-30T20:38:04.428617" level="INFO">Slept 2 seconds.</msg>
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-10-30T20:38:02.426517" elapsed="2.002100"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2025-10-30T20:38:04.430202" level="INFO">Clicking button 'name:btnK'.</msg>
+<arg>name:btnK</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2025-10-30T20:38:04.428617" elapsed="0.180101"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-10-30T20:38:14.610031" level="INFO">Slept 10 seconds.</msg>
+<arg>10</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-10-30T20:38:04.609717" elapsed="10.000314"/>
+</kw>
+<kw name="Clear Element Text" owner="SeleniumLibrary">
+<arg>xpath:/html/body/span[1]/div/div/div/form/div[1]/div[1]/div[2]/div[1]/div[2]/textarea</arg>
+<doc>Clears the value of the text-input-element identified by ``locator``.</doc>
+<status status="PASS" start="2025-10-30T20:38:14.611045" elapsed="0.075142"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-10-30T20:38:16.688292" level="INFO">Slept 2 seconds.</msg>
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-10-30T20:38:14.687182" elapsed="2.001110"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-10-30T20:38:16.688292" level="INFO">Typing text 'Facebook' into text field 'xpath:/html/body/span[1]/div/div/div/form/div[1]/div[1]/div[2]/div[1]/div[2]/textarea'.</msg>
+<arg>xpath:/html/body/span[1]/div/div/div/form/div[1]/div[1]/div[2]/div[1]/div[2]/textarea</arg>
+<arg>Facebook</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-10-30T20:38:16.688292" elapsed="0.107004"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2025-10-30T20:38:16.795296" level="INFO">Clicking button 'xpath:/html/body/span[1]/div/div/div/form/div[1]/div[1]/div[2]/button'.</msg>
+<arg>xpath:/html/body/span[1]/div/div/div/form/div[1]/div[1]/div[2]/button</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2025-10-30T20:38:16.795296" elapsed="5.823186"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-10-30T20:38:24.620335" level="INFO">Slept 2 seconds.</msg>
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-10-30T20:38:22.618482" elapsed="2.001853"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2025-10-30T20:38:24.622359" elapsed="2.183628"/>
+</kw>
+<tag>skip</tag>
+<status status="PASS" start="2025-10-30T20:37:58.078465" elapsed="28.727522"/>
+</test>
+<test id="s1-t2" name="InputValidation_TestCase" line="34">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2025-10-30T20:38:26.805987" level="INFO">Opening browser 'chrome' to base url 'https://www.flipkart.com/account/login?ret=/'.</msg>
+<arg>${shop}</arg>
+<arg>${browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2025-10-30T20:38:26.805987" elapsed="1.647812"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2025-10-30T20:38:28.455174" elapsed="0.033205"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-10-30T20:38:30.491070" level="INFO">Slept 2 seconds.</msg>
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-10-30T20:38:28.489387" elapsed="2.001683"/>
+</kw>
+<kw name="Title Should Be" owner="SeleniumLibrary">
+<msg time="2025-10-30T20:38:30.499111" level="INFO">Page title is 'Online Shopping India | Buy Mobiles, Electronics, Appliances, Clothing and More Online at Flipkart.com'.</msg>
+<arg>Online Shopping India | Buy Mobiles, Electronics, Appliances, Clothing and More Online at Flipkart.com</arg>
+<doc>Verifies that the current page title equals ``title``.</doc>
+<status status="PASS" start="2025-10-30T20:38:30.493080" elapsed="0.006031"/>
+</kw>
+<kw name="Set Variable" owner="BuiltIn">
+<msg time="2025-10-30T20:38:30.499727" level="INFO">${input_txt} = xpath:/html/body/div/div/div[3]/div/div[2]/div/form/div[1]/input</msg>
+<var>${input_txt}</var>
+<arg>xpath:/html/body/div/div/div[3]/div/div[2]/div/form/div[1]/input</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="PASS" start="2025-10-30T20:38:30.499727" elapsed="0.000000"/>
+</kw>
+<kw name="Element Should Be Enabled" owner="SeleniumLibrary">
+<arg>${input_txt}</arg>
+<doc>Verifies that element identified by ``locator`` is enabled.</doc>
+<status status="PASS" start="2025-10-30T20:38:30.500233" elapsed="0.041852"/>
+</kw>
+<kw name="Element Should Be Visible" owner="SeleniumLibrary">
+<msg time="2025-10-30T20:38:30.558906" level="INFO">Element 'xpath:/html/body/div/div/div[3]/div/div[2]/div/form/div[1]/input' is displayed.</msg>
+<arg>${input_txt}</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<status status="PASS" start="2025-10-30T20:38:30.543270" elapsed="0.015636"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-10-30T20:38:33.560637" level="INFO">Slept 3 seconds.</msg>
+<arg>3</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-10-30T20:38:30.558906" elapsed="3.001731"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-10-30T20:38:33.560637" level="INFO">Typing text 'sai@gmail.com' into text field 'xpath:/html/body/div/div/div[3]/div/div[2]/div/form/div[1]/input'.</msg>
+<arg>${input_txt}</arg>
+<arg>sai@gmail.com</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-10-30T20:38:33.560637" elapsed="0.111306"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-10-30T20:38:36.674562" level="INFO">Slept 3 seconds.</msg>
+<arg>3</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-10-30T20:38:33.673950" elapsed="3.000612"/>
+</kw>
+<kw name="Clear Element Text" owner="SeleniumLibrary">
+<arg>${input_txt}</arg>
+<doc>Clears the value of the text-input-element identified by ``locator``.</doc>
+<status status="PASS" start="2025-10-30T20:38:36.674562" elapsed="0.042533"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-10-30T20:38:39.717800" level="INFO">Slept 3 seconds.</msg>
+<arg>3</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-10-30T20:38:36.717095" elapsed="3.000705"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2025-10-30T20:38:39.719822" elapsed="2.170843"/>
+</kw>
+<status status="PASS" start="2025-10-30T20:38:26.805987" elapsed="15.084678"/>
+</test>
+<status status="PASS" start="2025-10-30T20:37:57.922517" elapsed="43.968148"/>
+</suite>
+<statistics>
+<total>
+<stat pass="2" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+<stat pass="1" fail="0" skip="0">skip</stat>
+</tag>
+<suite>
+<stat name="InputHandle" id="s1" pass="2" fail="0" skip="0">InputHandle</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.3.2 (Python 3.11.5 on win32)" generated="2025-11-01T15:56:52.179736" rpa="false" schemaversion="5">
+<suite id="s1" name="Tabs Alerts" source="D:\VenkatSai\Python_RobotFramework_Learn\robotLearn1\Automation_6\Tabs_Alerts.robot">
+<test id="s1-t1" name="HandlingTabs_TestCase" line="37">
+<kw name="HandleCase">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2025-11-01T15:56:52.343106" level="INFO">Opening browser 'chrome' to base url 'https://robotframework.org/'.</msg>
+<arg>${url}</arg>
+<arg>${browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2025-11-01T15:56:52.343106" elapsed="5.239322"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2025-11-01T15:56:57.584444" elapsed="0.075565"/>
+</kw>
+<kw name="Set Selenium Speed" owner="SeleniumLibrary">
+<arg>3</arg>
+<doc>Sets the delay that is waited after each Selenium command.</doc>
+<status status="PASS" start="2025-11-01T15:56:57.660009" elapsed="0.000000"/>
+</kw>
+<kw name="Click Link" owner="SeleniumLibrary">
+<msg time="2025-11-01T15:56:57.662020" level="INFO">Clicking link 'xpath://*[@id="app"]/div[5]/div[5]/div[2]/div[3]/div[2]/a[59]'.</msg>
+<arg>xpath://*[@id="app"]/div[5]/div[5]/div[2]/div[3]/div[2]/a[59]</arg>
+<doc>Clicks a link identified by ``locator``.</doc>
+<status status="PASS" start="2025-11-01T15:56:57.660009" elapsed="9.400308"/>
+</kw>
+<kw name="Switch Window" owner="SeleniumLibrary">
+<arg>Robot Framework</arg>
+<doc>Switches to browser window matching ``locator``.</doc>
+<status status="PASS" start="2025-11-01T15:57:07.060317" elapsed="24.118339"/>
+</kw>
+<kw name="Close Window" owner="SeleniumLibrary">
+<doc>Closes currently opened and selected browser window/tab.</doc>
+<status status="PASS" start="2025-11-01T15:57:31.178656" elapsed="3.071282"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2025-11-01T15:57:34.249938" elapsed="6.240902"/>
+</kw>
+<status status="PASS" start="2025-11-01T15:56:52.343106" elapsed="48.147734"/>
+</kw>
+<status status="PASS" start="2025-11-01T15:56:52.343106" elapsed="48.149758"/>
+</test>
+<test id="s1-t2" name="HandlingAlertBoxs_TestCase" line="40">
+<kw name="HandleAlerts">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2025-11-01T15:57:40.494889" level="INFO">Opening browser 'chrome' to base url 'https://testautomationpractice.blogspot.com/'.</msg>
+<arg>${url2}</arg>
+<arg>${browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2025-11-01T15:57:40.494889" elapsed="8.000845"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2025-11-01T15:57:48.495734" elapsed="3.083204"/>
+</kw>
+<kw name="Set Selenium Speed" owner="SeleniumLibrary">
+<arg>3</arg>
+<doc>Sets the delay that is waited after each Selenium command.</doc>
+<status status="PASS" start="2025-11-01T15:57:51.578938" elapsed="0.002022"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2025-11-01T15:57:51.581501" level="INFO">Clicking button 'id:confirmBtn'.</msg>
+<arg>id:confirmBtn</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2025-11-01T15:57:51.580960" elapsed="15.217988"/>
+</kw>
+<kw name="Handle Alert" owner="SeleniumLibrary">
+<msg time="2025-11-01T15:58:06.800640" level="INFO">HANDLE::&lt;class 'NoneType'&gt;::None</msg>
+<arg>ACCEPT</arg>
+<doc>Handles the current alert and returns its message.</doc>
+<status status="PASS" start="2025-11-01T15:58:06.800640" elapsed="9.030078"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2025-11-01T15:58:15.830718" level="INFO">Clicking button 'id:confirmBtn'.</msg>
+<arg>id:confirmBtn</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2025-11-01T15:58:15.830718" elapsed="15.254747"/>
+</kw>
+<kw name="Handle Alert" owner="SeleniumLibrary">
+<msg time="2025-11-01T15:58:31.085465" level="INFO">HANDLE::&lt;class 'NoneType'&gt;::None</msg>
+<arg>action=DISMISS</arg>
+<doc>Handles the current alert and returns its message.</doc>
+<status status="PASS" start="2025-11-01T15:58:31.085465" elapsed="9.041779"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2025-11-01T15:58:40.127244" elapsed="6.217169"/>
+</kw>
+<status status="PASS" start="2025-11-01T15:57:40.494889" elapsed="65.849524"/>
+</kw>
+<status status="PASS" start="2025-11-01T15:57:40.494889" elapsed="65.853804"/>
+</test>
+<status status="PASS" start="2025-11-01T15:56:52.183085" elapsed="114.167622"/>
+</suite>
+<statistics>
+<total>
+<stat pass="2" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="Tabs Alerts" id="s1" pass="2" fail="0" skip="0">Tabs Alerts</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

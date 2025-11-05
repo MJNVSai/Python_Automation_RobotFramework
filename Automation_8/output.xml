@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.3.2 (Python 3.11.5 on win32)" generated="2025-11-02T11:39:42.301013" rpa="false" schemaversion="5">
+<suite id="s1" name="Scroll MouseAction" source="D:\VenkatSai\Python_RobotFramework_Learn\robotLearn1\Automation_8\Scroll_MouseAction.robot">
+<test id="s1-t1" name="ScrollingPage_TestCase" line="61">
+<kw name="WebScrolling">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2025-11-02T11:39:42.491281" level="INFO">Opening browser 'chrome' to base url 'https://en.wikipedia.org/wiki/Main_Page'.</msg>
+<arg>${url}</arg>
+<arg>${browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2025-11-02T11:39:42.491281" elapsed="3.772859"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2025-11-02T11:39:46.264140" elapsed="0.093235"/>
+</kw>
+<kw name="Set Selenium Speed" owner="SeleniumLibrary">
+<arg>4</arg>
+<doc>Sets the delay that is waited after each Selenium command.</doc>
+<status status="PASS" start="2025-11-02T11:39:46.360332" elapsed="0.000000"/>
+</kw>
+<kw name="Execute Javascript" owner="SeleniumLibrary">
+<msg time="2025-11-02T11:39:46.369511" level="INFO">Executing JavaScript:
+window.scrollTo(0,1500)
+Without any arguments.</msg>
+<arg>window.scrollTo(0,1500)</arg>
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<status status="PASS" start="2025-11-02T11:39:46.360332" elapsed="4.083143"/>
+</kw>
+<kw name="Scroll Element Into View" owner="SeleniumLibrary">
+<arg>xpath://*[@id="mp-dyk"]/div[1]/div/span/a/img</arg>
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<status status="PASS" start="2025-11-02T11:39:50.443475" elapsed="8.338508"/>
+</kw>
+<kw name="Execute Javascript" owner="SeleniumLibrary">
+<msg time="2025-11-02T11:39:58.781983" level="INFO">Executing JavaScript:
+window.scrollTo(0, document.body.scrollHeight)
+Without any arguments.</msg>
+<arg>window.scrollTo(0, document.body.scrollHeight)</arg>
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<status status="PASS" start="2025-11-02T11:39:58.781983" elapsed="4.023493"/>
+</kw>
+<kw name="Execute Javascript" owner="SeleniumLibrary">
+<msg time="2025-11-02T11:40:02.805476" level="INFO">Executing JavaScript:
+window.scrollTo(0, -document.body.scrollHeight)
+Without any arguments.</msg>
+<arg>window.scrollTo(0, -document.body.scrollHeight)</arg>
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<status status="PASS" start="2025-11-02T11:40:02.805476" elapsed="4.011837"/>
+</kw>
+<kw name="Close All Browsers" owner="SeleniumLibrary">
+<doc>Closes all open browsers and resets the browser cache.</doc>
+<status status="PASS" start="2025-11-02T11:40:06.817313" elapsed="7.162059"/>
+</kw>
+<status status="PASS" start="2025-11-02T11:39:42.491281" elapsed="31.488091"/>
+</kw>
+<status status="PASS" start="2025-11-02T11:39:42.491281" elapsed="31.490120"/>
+</test>
+<test id="s1-t2" name="MouseActions" line="64">
+<kw name="Right_Double_Clicks">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2025-11-02T11:40:13.985451" level="INFO">Opening browser 'chrome' to base url 'https://testautomationpractice.blogspot.com/'.</msg>
+<arg>${url2}</arg>
+<arg>${browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2025-11-02T11:40:13.983428" elapsed="9.819475"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2025-11-02T11:40:23.802903" elapsed="4.055719"/>
+</kw>
+<kw name="Set Selenium Speed" owner="SeleniumLibrary">
+<arg>3</arg>
+<doc>Sets the delay that is waited after each Selenium command.</doc>
+<status status="PASS" start="2025-11-02T11:40:27.858622" elapsed="0.000000"/>
+</kw>
+<kw name="Open Context Menu" owner="SeleniumLibrary">
+<arg>xpath://*[@id="alertBtn"]</arg>
+<doc>Opens the context menu on the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-11-02T11:40:27.858622" elapsed="6.373350"/>
+</kw>
+<kw name="Double Click Element" owner="SeleniumLibrary">
+<msg time="2025-11-02T11:40:34.231972" level="INFO">Double clicking element 'xpath:/html/body/div[4]/div[2]/div[2]/div[2]/div[2]/div[2]/div[2]/div/div[4]/div[3]/div/aside/div/div[7]/div[1]/button'.</msg>
+<arg>xpath:/html/body/div[4]/div[2]/div[2]/div[2]/div[2]/div[2]/div[2]/div/div[4]/div[3]/div/aside/div/div[7]/div[1]/button</arg>
+<doc>Double clicks the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-11-02T11:40:34.231972" elapsed="6.449119"/>
+</kw>
+<kw name="Capture Element Screenshot" owner="SeleniumLibrary">
+<msg time="2025-11-02T11:40:46.921308" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="DoubleClickCheck.png"&gt;&lt;img src="DoubleClickCheck.png" width="400px"&gt;&lt;/a&gt;</msg>
+<arg>xpath://*[@id="HTML10"]</arg>
+<arg>DoubleClickCheck.png</arg>
+<doc>Captures a screenshot from the element identified by ``locator`` and embeds it into log file.</doc>
+<status status="PASS" start="2025-11-02T11:40:40.681091" elapsed="6.242255"/>
+</kw>
+<kw name="Close All Browsers" owner="SeleniumLibrary">
+<doc>Closes all open browsers and resets the browser cache.</doc>
+<status status="PASS" start="2025-11-02T11:40:46.923346" elapsed="6.223969"/>
+</kw>
+<status status="PASS" start="2025-11-02T11:40:13.983428" elapsed="39.163887"/>
+</kw>
+<status status="PASS" start="2025-11-02T11:40:13.983428" elapsed="39.165904"/>
+</test>
+<test id="s1-t3" name="DragDrop_Testcase" line="67">
+<kw name="DragDropBox">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2025-11-02T11:40:53.153363" level="INFO">Opening browser 'chrome' to base url 'https://demo.automationtesting.in/Static.html'.</msg>
+<arg>${url3}</arg>
+<arg>${browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2025-11-02T11:40:53.151349" elapsed="6.284349"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2025-11-02T11:40:59.435698" elapsed="3.083999"/>
+</kw>
+<kw name="Set Selenium Speed" owner="SeleniumLibrary">
+<arg>4</arg>
+<doc>Sets the delay that is waited after each Selenium command.</doc>
+<status status="PASS" start="2025-11-02T11:41:02.519697" elapsed="0.000000"/>
+</kw>
+<kw name="Drag And Drop" owner="SeleniumLibrary">
+<arg>xpath://*[@id="angular"]</arg>
+<arg>xpath://*[@id="droparea"]</arg>
+<doc>Drags the element identified by ``locator`` into the ``target`` element.</doc>
+<status status="PASS" start="2025-11-02T11:41:02.519697" elapsed="12.666122"/>
+</kw>
+<kw name="Drag And Drop" owner="SeleniumLibrary">
+<arg>xpath://*[@id="mongo"]</arg>
+<arg>xpath://*[@id="droparea"]</arg>
+<doc>Drags the element identified by ``locator`` into the ``target`` element.</doc>
+<status status="PASS" start="2025-11-02T11:41:15.185819" elapsed="12.623335"/>
+</kw>
+<kw name="Drag And Drop" owner="SeleniumLibrary">
+<arg>xpath://*[@id="node"]</arg>
+<arg>xpath://*[@id="droparea"]</arg>
+<doc>Drags the element identified by ``locator`` into the ``target`` element.</doc>
+<status status="PASS" start="2025-11-02T11:41:27.809154" elapsed="12.636858"/>
+</kw>
+<kw name="Close All Browsers" owner="SeleniumLibrary">
+<doc>Closes all open browsers and resets the browser cache.</doc>
+<status status="PASS" start="2025-11-02T11:41:40.446012" elapsed="6.198054"/>
+</kw>
+<status status="PASS" start="2025-11-02T11:40:53.151349" elapsed="53.492717"/>
+</kw>
+<status status="PASS" start="2025-11-02T11:40:53.151349" elapsed="53.492717"/>
+</test>
+<status status="PASS" start="2025-11-02T11:39:42.301013" elapsed="124.343053"/>
+</suite>
+<statistics>
+<total>
+<stat pass="3" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="Scroll MouseAction" id="s1" pass="3" fail="0" skip="0">Scroll MouseAction</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
