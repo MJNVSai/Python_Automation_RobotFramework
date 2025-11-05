@@ -4,7 +4,7 @@
 ![Robot Framework](https://img.shields.io/badge/Robot%20Framework-5.x-green?logo=robotframework)
 ![SeleniumLibrary](https://img.shields.io/badge/SeleniumLibrary-Automation-orange?logo=selenium)
 ![Platform](https://img.shields.io/badge/Platform-Windows%20%7C%20Mac%20%7C%20Linux-lightgrey)
-![License](https://img.shields.io/badge/License-MIT-yellow)
+
 ![Repo Size](https://img.shields.io/github/repo-size/MJNVSai/Python_Automation_RobotFramework)
 ![Stars](https://img.shields.io/github/stars/MJNVSai/Python_Automation_RobotFramework?style=social)
 ![Last Commit](https://img.shields.io/github/last-commit/MJNVSai/Python_Automation_RobotFramework)
